@@ -11,7 +11,7 @@ const MovieDetails = (props) => {
   }
 
   return (
-  <div className="savior">
+  <div className="yes-modal">
     <h1 className="title">{props.title}</h1>
     <button onClick={cancelbtnClose}>Cancel</button>
     <button onClick={confirmbtnClose}>Confirm</button>

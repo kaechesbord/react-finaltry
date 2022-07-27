@@ -19,7 +19,7 @@ const TopMovies = () => {
             setLoading(false)
             setMovies(data.data.results)
             const shorter = data.data.results;
-            shorter.forEach(title => <ŠvercKomerc title = {title.original_title}/>)
+            shorter.map(element => <ŠvercKomerc title = {element.original_title}/>)
         }
         fetchData()
     }, [])
