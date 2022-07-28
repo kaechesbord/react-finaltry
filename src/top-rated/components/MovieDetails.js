@@ -1,6 +1,5 @@
-import React from "react";
 import "./comp.css";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 const MovieDetails = (props) => {
 
   function cancelbtnClose() {
@@ -12,9 +11,9 @@ const MovieDetails = (props) => {
 
   return (
   <div className="yes-modal">
-    <h1 className="title">{props.title}</h1>
-    <button onClick={cancelbtnClose}>Cancel</button>
-    <button onClick={confirmbtnClose}>Confirm</button>
+    <h1 className="title">{props.titles}</h1>
+    <button type="button" class="btn btn-outline-danger mx-5" onClick={cancelbtnClose}>Cancel</button>
+    <button type="button" class="btn btn-outline-success mx-5" onClick={confirmbtnClose}>Confirm</button>
   </div>
   );
 };

@@ -24,7 +24,7 @@ const TopMovies = (props) => {
     
   return (
     <div>
-      {movies.map(element => <ŠvercKomerc title = {element.original_title}/>)}
+      {movies.map(element => <ŠvercKomerc titles = {element.original_title}/>)}
       <Search search = {search} setSearch = {setSearch}/>
       <Movies movies = {movies} loading = {loading}/>
     </div>
